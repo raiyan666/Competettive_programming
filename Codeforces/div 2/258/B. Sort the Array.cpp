@@ -15,27 +15,29 @@
 using namespace std;
 int main()
 {
-    int arr[100005];
+
     //freopen ("myfile.txt","w",stdout);
     int n;
     scanf("%d",&n);
-    for(int i=1;i<n;i++)scanf("%d",&arr[i]);
-    bool shuru=false;
-    int pos1=1,pos2=1;
-    for(int i=1;i<=n;i++){
-        if(!shuru){
-            if(arr[i]>arr[i+1]){
-                shuru=true;
-                pos1=i;
-            }
-
-         }
-        else{
-            if(arr[i]<maxim)break;
-            else pos2=i;
+    vector<int> arr(n);
+    for(int i=0;i<n;i++)scanf("%d",&arr[i]);
+    bool again=false;
+    int L=0,R;
+    while(arr[L]<arr[L+1]&&L+1<n){
+        L++;
+    }
+    R=L+1;
+    while(arr[R]<arr[R-1]&&R<n){
+        R++;
+    }
+    reverse(arr.begin()+L,arr.begin()+R);
+    for(int i=1;i<n;i++){
+        if(arr[i-1]>arr[i]){
+            cout<<"no\n";
+            return 0;
         }
     }
-    if(shuru)printf("yes\n%d %d\n",pos1,pos2);
-    else printf("no\n");
+    //if(arr[L]<arr[R])R=L;
+    cout<<"yes\n"<<L+1<<" "<<R<<"\n";
     return 0;
 }
