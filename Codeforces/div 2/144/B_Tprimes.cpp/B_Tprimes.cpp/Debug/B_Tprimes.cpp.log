@@ -1,0 +1,11 @@
+﻿  B.Tprimes.cpp
+E:\coding\Codeforces\div 2\144\B_Tprimes.cpp\B_Tprimes.cpp\B.Tprimes.cpp(6,10): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+E:\coding\Codeforces\div 2\144\B_Tprimes.cpp\B_Tprimes.cpp\B.Tprimes.cpp(14,2): error C2955: 'std::iterator': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\xutility(6006): message : see declaration of 'std::iterator'
+E:\coding\Codeforces\div 2\144\B_Tprimes.cpp\B_Tprimes.cpp\B.Tprimes.cpp(14,28): error C2955: 'std::iterator': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\xutility(6006): message : see declaration of 'std::iterator'
+E:\coding\Codeforces\div 2\144\B_Tprimes.cpp\B_Tprimes.cpp\B.Tprimes.cpp(14,28): error C2039: 'itr': is not a member of 'std::iterator<_Category,_Ty,_Diff,_Pointer,_Reference>'
+E:\coding\Codeforces\div 2\144\B_Tprimes.cpp\B_Tprimes.cpp\B.Tprimes.cpp(14,2): error C2440: 'initializing': cannot convert from 'std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<int>>>' to 'std::set<int,std::less<int>,std::allocator<int>>'
+E:\coding\Codeforces\div 2\144\B_Tprimes.cpp\B_Tprimes.cpp\B.Tprimes.cpp(14,32): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+E:\coding\Codeforces\div 2\144\B_Tprimes.cpp\B_Tprimes.cpp\B.Tprimes.cpp(14,51): error C2676: binary '!=': 'std::set<int,std::less<int>,std::allocator<int>>' does not define this operator or a conversion to a type acceptable to the predefined operator
+E:\coding\Codeforces\div 2\144\B_Tprimes.cpp\B_Tprimes.cpp\B.Tprimes.cpp(14,68): error C2676: binary '++': 'std::set<int,std::less<int>,std::allocator<int>>' does not define this operator or a conversion to a type acceptable to the predefined operator
